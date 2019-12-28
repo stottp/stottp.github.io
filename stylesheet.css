@@ -18,6 +18,7 @@ h1 {
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+    color: white;
 }
 
 header {
@@ -69,6 +70,7 @@ img {
   display: flex;
   flex-wrap: wrap;
 }
+
 
 .nav-links {
   display: flex;
@@ -226,7 +228,6 @@ section > h2 {
     /* Sizing */
     display: flex;
     width: 100vw;
-
 }
 
 .form-container {
@@ -236,7 +237,7 @@ section > h2 {
 
 fieldset > div {
   display: flex;
-  align-items: center;
+  flex-direction: column;
 }
 
 input {
@@ -255,7 +256,7 @@ button, input, select, textarea {
   font-family : inherit;
   font-size   : 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin-bottom: 12px;
   box-sizing: border-box;
   border: 2px solid grey;
   border-radius: 4px;
@@ -266,6 +267,7 @@ button, input, select, textarea {
 .contact-title {
     text-align: center;
     font-weight: bold;
+    margin-bottom: 15px;
 }
 
 input[type=button], input[type=submit], input[type=reset] {
@@ -284,15 +286,6 @@ input[type=button], input[type=submit], input[type=reset] {
 
 
 /***************************** Media Queries ***********************/
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.box {
-  width: 100%;
-}
 
 @media screen and (min-width: 450px) {
   .left, .right {
