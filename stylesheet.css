@@ -17,7 +17,6 @@ p {
 h1 {
     margin: 0;
     padding: 0;
-    color: #2ab673;
     font-family: Montserrat;
 }
 
@@ -97,6 +96,10 @@ img {
 
 .xmas_green {
     background-image: linear-gradient(to right, #2ab673, #56ab2f);
+}
+
+.whitesmoke {
+    background-color: #F5F5F5;
 }
 
 .logo {
@@ -203,7 +206,7 @@ section > h2 {
 
 #map {
     width: 100%;
-    height: 400px;
+    height: 100%;
     background-color: grey;
 }
 
@@ -316,20 +319,6 @@ input[type=button], input[type=submit], input[type=reset] {
     .delivery h2 {
         font-size: 2em;
         margin: 0.15em;
-    }
-}
-
-@media (max-width: 768px) {
-    .form-group {
-        flex-direction: column;
-    }
-    .form-group .input-control {
-        margin-top: 2px;
-    }
-    .form-group label.right-inline {
-        text-align: left;
-        padding-right: 0;
-        padding-left: 0;
     }
 }
 
