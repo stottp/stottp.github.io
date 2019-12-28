@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Christmas Tree Collection</title>
+  <meta name="author" content="name">
+  <meta name="description" content="Christmas tree collection and recycling">
+  <meta name="keywords" content="keywords,here">
+  <link rel="shortcut icon" href="favicon.ico" type="image/vnd.microsoft.icon">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css" type="text/css">
+  <script type="text/javascript">
+   var _gaq = _gaq || [];
+   _gaq.push(['_setAccount', 'UA-XXXXXXXX-Y']);
+   _gaq.push(['_trackPageview']);
+   (function()
+   {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+   })();
+  </script>
+  </head>
+  <body>
+      <div class="container">
+          <section class="hero">
+              <h1>There's an easier way to dispose of your Christmas tree!</h1>
+              <h2>For only £10 we will collect and recycle your tree </h2>
+          </section>
+
+          <section class="delivery xmas_green">
+              <h2>Collection between Saturday 4th January 2020 12pm and Sunday 5th January 2020.</h2>
+          </section>
+
+          <section class="left light_blue">
+              <h3>Collection details</h3>
+              <p>We will collect and recycle your real Christmas tree. Confirm your collection today by filling out the form below and take the hassle out of disposing of your tree whilst helping the environment.</p>
+              <p>We collect real Christmas trees (sorry no artificial trees) at the following postcodes, DY2, DY3, DY4, DY5, DY6, DY7, DY8, DY9, DY10, DY11, B62, B63, B64 and B65.</p>
+
+                  <ol>
+                      <li>Check your tree will be collected within our collection areas listed above</li>
+                      <li>Confirm your tree is under 3.0m / 10ft in length</li>
+                      <li>Fill out the form below and pay with paypal</li>
+                      <li>Remove all decorations, tinsel and lights from the tree</li>
+                      <li>Place your Christmas tree on kerb no later than Saturday 4th January 2020 at 12pm</li>
+                  </ol>
+
+                  <i class="fas fa-tree"></i>
+          </section>
+          <section class="right green">
+              <!--<iframe src="https://www.google.com/maps/d/embed?mid=1YaXa2k22yzW3crOyXMmIzlixbYD6CN8u" width="640" height="480"></iframe>-->
+              <h3>Where we collect</h3>
+                <!--The div element for the map -->
+                <div id="map"></div>
+                    <script>
+                        // Initialize and add the map
+                        function initMap() {
+                          // The location of Uluru
+                          var uluru = {lat: 52.419938, lng: -2.138885};
+                          // The map, centered at Uluru
+                          var map = new google.maps.Map(
+                              document.getElementById('map'), {zoom: 8, center: uluru});
+
+                          var ctaLayer = new google.maps.KmlLayer({
+                              url: 'https://github.com/stottp/tmt/blob/master/postcodes.kml',
+                              map: map
+                          });
+                        }
+                    </script>
+          </section>
+          <section class="treecycle xmas_green">
+              <h2>#treecycle</h2>
+          </section>
+
+      <section class="contact">
+          <form method="post" class="form-container">
+              <fieldset>
+                  <span class="contact-title">Reserve your Christmas tree collection</span>
+
+                  <div>
+                      <label for="first-name">First Name<span class="required"> *</span></label>
+                      <input type="text" id="first-name" placeholder="Enter your first name here">
+                  </div>
+
+                  <div>
+                      <label for="last-name">Last Name<span class="required"> *</span></label>
+                      <input type="text" id="last-name" placeholder="Enter your last name here" class="input-field">
+                  </div>
+
+                  <div>
+                      <label for="address">Address<span class="required"> *</span></label>
+                      <textarea rows="6" id="address" placeholder="Enter your address here"></textarea>
+                  </div>
+
+                  <div>
+                      <label for="postcode">Postcode<span class="required"> *</span></label>
+                      <input type="text" id="postcode" placeholder="Enter your postcode here" class="input-field">
+                  </div>
+
+                  <div>
+                      <label for="email">Email<span class="required"> *</span></label>
+                      <input type="email" id="email" placeholder="Enter your email here" type="email" class="input-field">
+                  </div>
+
+                  <div>
+                      <label for="phone">Phone<span class="required"> *</span></label>
+                      <input type="tel" id="phone" placeholder="Enter your phone here" class="input-field">
+                  </div>
+                    <input type="submit" value="Click to confirm collection and pay securley with PayPal">
+                  <div>
+
+               </fieldset>
+          </form>
+        </section>
+
+      <footer class="black">
+          &copy; <script>document.write(new Date().getFullYear());</script> Take My Tree.
+      </footer>
+
+      </div> <!-- container -->
+
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtZc57UWFSXaTHOmCVKLWPzqN-O5FlLBg&callback=initMap">
+        </script>
+  </body>
+</html>
