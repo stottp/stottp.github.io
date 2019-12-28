@@ -61,11 +61,19 @@
                           var map = new google.maps.Map(
                               document.getElementById('map'), {zoom: 8, center: uluru});
 
+                              // Resize stuff...
+                              google.maps.event.addDomListener(window, "resize", function() {
+                                  var center = map.getCenter();
+                                  google.maps.event.trigger(map, "resize");
+                                  map.setCenter(center);
+                              });
+
                           var ctaLayer = new google.maps.KmlLayer({
                               url: 'https://stottp.github.io/ChristmasTreeCollection.kml',
                               map: map
                           });
                         }
+            
                     </script>
           </section>
           <section class="treecycle xmas_green">
@@ -108,7 +116,7 @@
                       <label for="phone">Phone<span class="required"> *</span></label>
                       <input type="tel" id="phone" placeholder="Enter your phone here" class="input-field">
                   </div>
-                    <input type="submit" value="Click to confirm collection and pay securley with PayPal">
+                    <input type="submit" value="Click to confirm collection">
                   <div>
 
                </fieldset>
